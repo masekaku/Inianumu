@@ -20,13 +20,22 @@ const videoContainer = document.getElementById("video-list");
 videoList.forEach((videoId, index) => {
   const card = document.createElement("div");
   card.className = "video-card";
-  const judul = judulViral[index % judulViral.length];
+  const judul = AsupanViral[index % AsupanViral.length];
   card.innerHTML = `
     <h2>${judul}</h2>
     <iframe src="https://do7go.com/e/${videoId}" scrolling="no" frameborder="0" allowfullscreen></iframe>
     <a href="${linkDownloadTipuan}" target="_blank" class="download-btn">Download Video</a>
     <div class="ad-slot">
-      <img src="https://via.placeholder.com/320x50?text=Iklan+320x50" alt="Ad Banner" />
+      <script type="text/javascript">
+	atOptions = {
+		'key' : '12838ee46c3b41c1d0eb93e294248125',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//incredibleenhancementslightning.com/12838ee46c3b41c1d0eb93e294248125/invoke.js"></script>
     </div>
   `;
   videoContainer.appendChild(card);
